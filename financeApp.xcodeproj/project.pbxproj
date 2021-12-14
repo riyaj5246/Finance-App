@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B4355BFF2768480B00FDFC28 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4355BFE2768480B00FDFC28 /* Transaction.swift */; };
+		B4355C0127684C5A00FDFC28 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4355C0027684C5A00FDFC28 /* Data.swift */; };
+		B4355C0327684DDE00FDFC28 /* TransactionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4355C0227684DDE00FDFC28 /* TransactionRow.swift */; };
+		B4355C052768500600FDFC28 /* TransactionDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4355C042768500600FDFC28 /* TransactionDetail.swift */; };
 		B47F546227629585002368AD /* financeAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47F546127629585002368AD /* financeAppApp.swift */; };
 		B47F546427629585002368AD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47F546327629585002368AD /* ContentView.swift */; };
 		B47F546627629586002368AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B47F546527629586002368AD /* Assets.xcassets */; };
@@ -14,6 +18,9 @@
 		B47F547327629587002368AD /* financeAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47F547227629587002368AD /* financeAppTests.swift */; };
 		B47F547D27629587002368AD /* financeAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47F547C27629587002368AD /* financeAppUITests.swift */; };
 		B47F547F27629587002368AD /* financeAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47F547E27629587002368AD /* financeAppUITestsLaunchTests.swift */; };
+		B47F548C27629DA3002368AD /* homeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47F548B27629DA3002368AD /* homeView.swift */; };
+		B47F548E27629DB1002368AD /* transactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47F548D27629DB1002368AD /* transactionsView.swift */; };
+		B47F54902766CACE002368AD /* homePageCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47F548F2766CACE002368AD /* homePageCategoryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B4355BFE2768480B00FDFC28 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		B4355C0027684C5A00FDFC28 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		B4355C0227684DDE00FDFC28 /* TransactionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionRow.swift; sourceTree = "<group>"; };
+		B4355C042768500600FDFC28 /* TransactionDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetail.swift; sourceTree = "<group>"; };
 		B47F545E27629585002368AD /* financeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = financeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B47F546127629585002368AD /* financeAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = financeAppApp.swift; sourceTree = "<group>"; };
 		B47F546327629585002368AD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +55,9 @@
 		B47F547827629587002368AD /* financeAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = financeAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B47F547C27629587002368AD /* financeAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = financeAppUITests.swift; sourceTree = "<group>"; };
 		B47F547E27629587002368AD /* financeAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = financeAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B47F548B27629DA3002368AD /* homeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeView.swift; sourceTree = "<group>"; };
+		B47F548D27629DB1002368AD /* transactionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = transactionsView.swift; sourceTree = "<group>"; };
+		B47F548F2766CACE002368AD /* homePageCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homePageCategoryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +85,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B4355BFC276847BA00FDFC28 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B47F548D27629DB1002368AD /* transactionsView.swift */,
+				B4355C042768500600FDFC28 /* TransactionDetail.swift */,
+				B4355C0227684DDE00FDFC28 /* TransactionRow.swift */,
+				B47F548F2766CACE002368AD /* homePageCategoryView.swift */,
+				B47F548B27629DA3002368AD /* homeView.swift */,
+				B47F546327629585002368AD /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		B47F545527629585002368AD = {
 			isa = PBXGroup;
 			children = (
@@ -94,8 +121,10 @@
 		B47F546027629585002368AD /* financeApp */ = {
 			isa = PBXGroup;
 			children = (
+				B4355BFE2768480B00FDFC28 /* Transaction.swift */,
+				B4355C0027684C5A00FDFC28 /* Data.swift */,
 				B47F546127629585002368AD /* financeAppApp.swift */,
-				B47F546327629585002368AD /* ContentView.swift */,
+				B4355BFC276847BA00FDFC28 /* Views */,
 				B47F546527629586002368AD /* Assets.xcassets */,
 				B47F546727629586002368AD /* Preview Content */,
 			);
@@ -257,8 +286,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4355C0127684C5A00FDFC28 /* Data.swift in Sources */,
 				B47F546427629585002368AD /* ContentView.swift in Sources */,
+				B4355C052768500600FDFC28 /* TransactionDetail.swift in Sources */,
+				B47F548E27629DB1002368AD /* transactionsView.swift in Sources */,
+				B4355BFF2768480B00FDFC28 /* Transaction.swift in Sources */,
 				B47F546227629585002368AD /* financeAppApp.swift in Sources */,
+				B4355C0327684DDE00FDFC28 /* TransactionRow.swift in Sources */,
+				B47F548C27629DA3002368AD /* homeView.swift in Sources */,
+				B47F54902766CACE002368AD /* homePageCategoryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
