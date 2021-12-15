@@ -11,6 +11,7 @@
 		B4355C0127684C5A00FDFC28 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4355C0027684C5A00FDFC28 /* Data.swift */; };
 		B4355C0327684DDE00FDFC28 /* TransactionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4355C0227684DDE00FDFC28 /* TransactionRow.swift */; };
 		B4355C052768500600FDFC28 /* TransactionDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4355C042768500600FDFC28 /* TransactionDetail.swift */; };
+		B4355C0727698B5600FDFC28 /* AddTransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4355C0627698B5600FDFC28 /* AddTransactionView.swift */; };
 		B47F546227629585002368AD /* financeAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47F546127629585002368AD /* financeAppApp.swift */; };
 		B47F546427629585002368AD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47F546327629585002368AD /* ContentView.swift */; };
 		B47F546627629586002368AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B47F546527629586002368AD /* Assets.xcassets */; };
@@ -45,6 +46,7 @@
 		B4355C0027684C5A00FDFC28 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		B4355C0227684DDE00FDFC28 /* TransactionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionRow.swift; sourceTree = "<group>"; };
 		B4355C042768500600FDFC28 /* TransactionDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetail.swift; sourceTree = "<group>"; };
+		B4355C0627698B5600FDFC28 /* AddTransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTransactionView.swift; sourceTree = "<group>"; };
 		B47F545E27629585002368AD /* financeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = financeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B47F546127629585002368AD /* financeAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = financeAppApp.swift; sourceTree = "<group>"; };
 		B47F546327629585002368AD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				B47F548D27629DB1002368AD /* transactionsView.swift */,
+				B4355C0627698B5600FDFC28 /* AddTransactionView.swift */,
 				B4355C042768500600FDFC28 /* TransactionDetail.swift */,
 				B4355C0227684DDE00FDFC28 /* TransactionRow.swift */,
 				B47F548F2766CACE002368AD /* homePageCategoryView.swift */,
@@ -295,6 +298,7 @@
 				B4355C0327684DDE00FDFC28 /* TransactionRow.swift in Sources */,
 				B47F548C27629DA3002368AD /* homeView.swift in Sources */,
 				B47F54902766CACE002368AD /* homePageCategoryView.swift in Sources */,
+				B4355C0727698B5600FDFC28 /* AddTransactionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

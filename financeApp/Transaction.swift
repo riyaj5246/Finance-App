@@ -12,12 +12,5 @@ struct Transaction: Hashable, Codable, Identifiable {
     var description: String
     var type: String
     var amount: Int
-    
-   // var amountDisplay: String
-    
-    //TODO: IF STATEMENT FOR AMOUNT DISPLAY STRING
-//    if amount >= 0 {
-//        amountDisplay = "$" + amount
-//    }
-    
+    var details: String
 }
