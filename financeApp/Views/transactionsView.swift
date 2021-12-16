@@ -25,7 +25,8 @@ struct transactionsView: View {
                         }
                     }
                 }
-                .frame(height: 600)
+                .frame(height: 550)
+
                 
                 NavigationLink(destination: AddTransactionView(), isActive: $isGoingToAddTransactionView) { Text("")
                         .navigationBarTitle("")
@@ -46,7 +47,11 @@ struct transactionsView: View {
                         .shadow(color: Color("AccentColor"), radius: 10, x: 5, y: 5)
                 }
             }
+
         }
+        .navigationBarBackButtonHidden(true)
+        .navigationBarTitle("")
+        .navigationBarHidden(true)
    
      
     }

@@ -11,7 +11,7 @@ struct homeView: View {
     @State var balance = "$1000.00"
     @State var amountSpent = "$500.00"
     @State var amountEarned = "$500.00"
-    @State var categoriesArray = ["Food", "Clothes", "Entertainment", "Savings", "Debt Payment", "Other"]
+    @State var categoriesArray = ["Bills & Util", "Food", "Clothing", "Debt/Mortgage", "Savings", "Salary", "Other"]
     
     var body: some View {
         ScrollView{
