@@ -7,6 +7,11 @@
 
 import Foundation
 
+var balance: Int = 0
+
+var amtSpent: Int = 0
+
+var amtReceived: Int = 0
     
 var transactions: [Transaction] = [
         Transaction(id: 0, description: "I got paid!", type: "Income", amount: 500, details: "Two week salary for working part time at coffee shop"),
@@ -16,4 +21,26 @@ var transactions: [Transaction] = [
         Transaction(id: 4, description: "Hehe more money", type: "Income", amount: 90, details: "sldskf"),
         Transaction(id: 5, description: "Chipotle", type: "Food", amount: -12, details: "sldskf"),
 ]
+
+public func updateTotalBalance () -> String {
+    balance = 0
+    amtReceived = 0
+    amtSpent = 0
+    
+    for transaction in transactions {
+        balance += transaction.amount
+        
+        if transaction.amount > 0 {
+            amtReceived += transaction.amount
+        }
+        else{
+            amtSpent += transaction.amount
+        }
+    }
+    print(balance)
+    return "$\(balance)"
+}
+
+
+
 

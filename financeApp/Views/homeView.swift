@@ -8,10 +8,8 @@
 import SwiftUI
 
 struct homeView: View {
-    @State var balance = "$1000.00"
-    @State var amountSpent = "$500.00"
-    @State var amountEarned = "$500.00"
     @State var categoriesArray = ["Bills & Util", "Food", "Clothing", "Debt/Mortgage", "Savings", "Salary", "Other"]
+    @State var randString: String = updateTotalBalance()
     
     var body: some View {
         ScrollView{
@@ -26,7 +24,7 @@ struct homeView: View {
                 .background(Rectangle()
                                 .fill(Color("AccentColor"))
                                 .shadow(color: Color("AccentColor"), radius: 10, x: 5, y: 5))
-            Text(balance)
+            Text(randString)
                 .font(.system(size: 70))
                 .fontWeight(.semibold)
                 .foregroundColor(Color.white)
@@ -37,6 +35,9 @@ struct homeView: View {
                 .background(Rectangle()
                                 .fill(Color("AccentColor"))
                                 .shadow(color: Color("AccentColor"), radius: 10, x: 5, y: 5))
+                .onAppear {
+                    randString = updateTotalBalance()
+                }
             HStack {
                 Text("Spendings:")
                     .font(.system(size: 30))
@@ -62,7 +63,7 @@ struct homeView: View {
                                 .shadow(color: Color("Accent2"), radius: 10, x: 5, y: 5))
             }
             HStack {
-                Text(amountSpent)
+                Text("-$\(amtSpent.magnitude)")
                     .font(.system(size: 30))
                     .fontWeight(.semibold)
                     .foregroundColor(Color.white)
@@ -73,7 +74,7 @@ struct homeView: View {
                     .background(Rectangle()
                                     .fill(Color("Accent2"))
                                 .shadow(color: Color("Accent2"), radius: 10, x: 5, y: 5))
-                Text(amountEarned)
+                Text("$\(amtReceived)")
                     .font(.system(size: 30))
                     .fontWeight(.semibold)
                     .foregroundColor(Color.white)
@@ -98,15 +99,6 @@ struct homeView: View {
                                 .fill(Color("Color3"))
                             .shadow(color: Color("Color3"), radius: 10, x: 5, y: 5))
             
-//            NavigationView {
-//                List($categoriesArray) { category in
-//                    NavigationLink {
-//                        homePageCategoryView()
-//                    } label: {
-//                        category
-//                    }
-//                }
-//            }
             homePageCategoryView()
             homePageCategoryView()
             homePageCategoryView()

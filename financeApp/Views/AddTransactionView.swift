@@ -75,7 +75,8 @@ struct AddTransactionView: View {
                         transactions.append(
                             Transaction(id: transactions.count, description: title, type: transactionType.rawValue, amount: amountInt, details: details)
                         )
-                        
+                        let balance = updateTotalBalance()
+                        print("balance",balance)
                         isGoingToTransactionView = true
                     }
 
