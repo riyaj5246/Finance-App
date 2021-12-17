@@ -8,12 +8,14 @@
 import SwiftUI
 
 struct homePageCategoryView: View {
-    @State var usedAmt = "$50"
-    @State var leftAmt = "$20"
+
+    var category: TransactionType
+    var index: Int
+    @State var categoryAmts: [Int] = updateCategoriesBalance()
 
     var body: some View {
         HStack{
-            Text("Storage Type")
+            Text(category.name)
                 .font(.system(size: 25))
                 .fontWeight(.semibold)
                 .foregroundColor(Color.white)
@@ -26,7 +28,10 @@ struct homePageCategoryView: View {
                            // .shadow(color: Color("AccentColor"), radius: 10, x: 5, y: 5))
             
                
-            Text("Net Spendings:  \(leftAmt)")
+            Text("""
+                    Net Total:
+                    $\(categoryAmts[index])
+                    """)
                 .font(.system(size: 20))
                 .fontWeight(.semibold)
                 .foregroundColor(Color.white)
@@ -36,14 +41,20 @@ struct homePageCategoryView: View {
                 .frame(width: 190, height: 75)
                 .background(Rectangle()
                                 .fill(Color("Color3")))
-                              //  .shadow(color: Color("Color3"), radius: 10, x: 5, y: 5))
+                .onAppear {
+                    categoryAmts = updateCategoriesBalance()
+                }
 
         }
+        .onAppear{
+            categoryAmts = updateCategoriesBalance()
+        }
     }
+       
 }
 
 struct homePageCategoryView_Previews: PreviewProvider {
     static var previews: some View {
-        homePageCategoryView()
+        homePageCategoryView(category: categories[1], index: 1)
     }
 }

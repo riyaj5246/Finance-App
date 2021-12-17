@@ -98,11 +98,12 @@ struct homeView: View {
                 .background(Rectangle()
                                 .fill(Color("Color3"))
                             .shadow(color: Color("Color3"), radius: 10, x: 5, y: 5))
-            
-            homePageCategoryView()
-            homePageCategoryView()
-            homePageCategoryView()
-            homePageCategoryView()
+    
+            CategoryView()
+                .onAppear{
+                    let x = updateCategoriesBalance()
+                    print(x)
+                }
         }
     }
 }
