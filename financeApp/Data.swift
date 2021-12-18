@@ -63,16 +63,10 @@ public func updateCategoriesBalance () -> [Int]{
         switch type{
         case "bills":
             categories[0].amt += transaction.amount
-            print(type)
-
         case "food":
             categories[1].amt += transaction.amount
-            print(type)
-
         case "clothing":
             categories[2].amt += transaction.amount
-            print(type)
-
         case "debt":
             categories[3].amt += transaction.amount
         case "saving":
@@ -83,8 +77,6 @@ public func updateCategoriesBalance () -> [Int]{
             categories[6].amt += transaction.amount
         default:
             categories[6].amt += transaction.amount
-            print(type)
-
         }
         
     }
